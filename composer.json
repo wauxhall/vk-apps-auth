@@ -1,0 +1,33 @@
+{
+    "name": "wauxhall/vk-apps-auth",
+    "description": "A module for authorizing a user from VK application. It is useful when your app is backend api-based server for VK application. With this extension, your system will be able to authorize user only with email/phone and sign, that *vk-app* provides. This means, user don't have to register in your backend app. It can be done automatically using credentials provided by VK. After user can be logged in with VK app sign instead of password. Simple!",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Dmitry Bykov",
+            "email": "black1997out@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^7.0",
+        "laravel/passport": "^8.4",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wauxhall\\VkAppsAuth\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
